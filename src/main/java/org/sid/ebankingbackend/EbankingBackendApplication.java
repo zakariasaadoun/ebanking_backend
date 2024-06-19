@@ -35,7 +35,7 @@ public class EbankingBackendApplication {
     @Bean
     CommandLineRunner commandLineRunner(BankAccountService bankAccountService){
         return args -> {
-           Stream.of("Amal","Dalal","Dina").forEach(name->{
+           Stream.of("Zakaria","Ali","Imane").forEach(name->{
                CustomerDTO customer=new CustomerDTO();
                customer.setName(name);
                customer.setEmail(name+"@gmail.com");
@@ -70,7 +70,7 @@ public class EbankingBackendApplication {
                             BankAccountRepository bankAccountRepository,
                             AccountOperationRepository accountOperationRepository){
         return args -> {
-            Stream.of("Nour","Asmaa","Lamiaa").forEach(name->{
+            Stream.of("Mohammed","Karim","Laila").forEach(name->{
                 Customer customer=new Customer();
                 customer.setName(name);
                 customer.setEmail(name+"@gmail.com");
